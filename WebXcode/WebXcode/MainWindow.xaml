@@ -1,0 +1,27 @@
+﻿<Window x:Class="WebXcode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing" Closed="Window_Closed">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="320" VerticalAlignment="Top" Width="517">
+            <TabItem x:Name="_tiSqlSettings" Header="SQL Einstellungen">
+                <Grid Background="#FFE5E5E5">
+                    <PasswordBox x:Name="_pboPassword" HorizontalAlignment="Left" Margin="93,102,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+                    <TextBox x:Name="_tboAdress" HorizontalAlignment="Left" Height="23" Margin="93,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276"/>
+                    <Label x:Name="_lblAdress" Content="SQL-Adresse" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="_lblUserName" Content="Benutzer" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="_lblUserPassword" Content="Passwort" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="_tboUser" HorizontalAlignment="Left" Height="23" Margin="93,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="_btnCheckConnection" Content="Verbindung prüfen" HorizontalAlignment="Left" Margin="234,134,0,0" VerticalAlignment="Top" Width="135" Click="_btnCheckConnection_Click"/>
+                    <Label x:Name="_lblConnectionState" Content="Status" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="_tboConnectionState" HorizontalAlignment="Left" Height="23" Margin="93,133,0,0" TextWrapping="Wrap" Text="nicht geprüft" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+                    <Label x:Name="_lblDatabase" Content="Datenbank" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="_tboDatabase" HorizontalAlignment="Left" Height="23" Margin="93,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
